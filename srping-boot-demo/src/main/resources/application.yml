@@ -1,0 +1,11 @@
+server:
+    port: 8080
+redisson:
+  lock:
+    server:
+       address: 127.0.0.1:6379
+       database: 1
+       type: standalone
+redis:
+  lock:
+    cron: 0/5 * * * * ?
