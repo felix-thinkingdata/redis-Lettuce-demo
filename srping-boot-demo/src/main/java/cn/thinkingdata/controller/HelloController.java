@@ -1,5 +1,6 @@
 package cn.thinkingdata.controller;
 
+import cn.thinkingdata.felix.FelixService;
 import cn.thinkingdata.redis.RedissonLock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,6 +14,9 @@ public class HelloController {
 
     @Autowired
     RedissonLock redissonLock;
+
+    @Autowired
+    FelixService felixService;
 
   /**
    * describe: 获取锁
@@ -36,6 +40,18 @@ public class HelloController {
     @GetMapping("/release")
     public void release() {
          redissonLock.release("lock");
+    }
+
+
+    /**
+     * describe: 测试自动装填felix starter
+     * creat_user: felix@thinkingdata.cn
+     * creat_date: 2020/4/14
+     * creat_time: 10:21 下午
+     **/
+    @GetMapping("/felix")
+    public String felixSay(){
+       return felixService.sayHello();
     }
 
 

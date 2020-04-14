@@ -9,3 +9,6 @@ redisson:
 redis:
   lock:
     cron: 0/5 * * * * ?
+felix:
+  name: wangjianda
+  msg: what are you doing
