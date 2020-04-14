@@ -1,0 +1,13 @@
+# Project exclude paths
+/srping-boot-demo/target/
+/ta-redis-common-starter/target/
+.idea/.gitignore
+.idea/GrepConsole.xml
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/junitgenerator-prj-settings.xml
+.idea/misc.xml
+.idea/uiDesigner.xml
+redis-Lettuce-demo.iml
+srping-boot-demo/src/test/
+ta-redis-common-starter/src/test/

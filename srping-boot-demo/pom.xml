@@ -19,7 +19,7 @@
 
         <dependency>
             <groupId>com.thinkingdata.redis</groupId>
-            <artifactId>ta-redis-common-starter</artifactId>
+            <artifactId>ta-redis-redisson-common-starter</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
